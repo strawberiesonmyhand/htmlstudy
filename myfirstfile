@@ -1,0 +1,219 @@
+<!DOCTLE html>
+<html lang="ko">
+	<head>
+		<link rel="stylesheet" href="styleh1.css">
+			<!--rel은 현재 문서와 링크된 문서 사이 관계 설명
+			href는 가져올 파일을 지정. 이것 외에도 media 속성 있음. 스크린 사이즈와 장치에 다른 스타일을 적용할 때 사용-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>			
+		<title> HTML 연습 노트 </title>	
+	</head>	
+
+
+	<body bgcolor="#F4F3FF">
+		<!--using background, you can change the background of the page to selected picture-->
+		<header>
+			<p style="height: 50px" class="topdocument">
+				<a name="top">여기서 문서의 상단   
+					<a href="#bottom" class="link_down">맨 아래로 이동</a>			
+			</p>
+			
+			<div class="cerfitication"><!--to change each label's interval needs CSS coding-->
+				<form action="#"" method="get">
+					<fieldset>
+						<legend>입력해주세요</legend>
+						<p>
+							<fieldset>
+								<legend>인적사항</legend>
+								<label for="title"><지역> <거주형태> <1일 식사 횟수><br>
+									<select name="city" id="city"><!--using multiple attribute, you can select multiple values-->
+										<optgroup label="경상남도">
+											<option value="통영시">통영시</option><!--using selected attribute, you can change base value-->
+											<option value="거제시">거제시</option>
+											<option value="진주시">진주시</option>
+											<option value="경산시">경산시</option>
+											<option value="밀양시">밀양시</option>
+											<option value="사천군">사천군</option>
+											<option value="남해군">남해군</option>
+											<option value="산청군">산청군</option>
+											<option value="김해시">김해시</option>
+										</optgroup>
+									</select>
+									<select name="city" id="houses">
+										<optgroup label="거주형태">
+											<option value="원룸">원룸</option>
+											<option value="투룸">투룸</option>
+											<option value="쓰리룸">쓰리룸</option>
+											<option value="기숙사">기숙사</option>
+											<option value="아파트">아파트</option>
+										</optgroup>
+									</select>
+									<select name="meal" id="number of meals">
+										<optgroup label="식사 횟수">
+											<option value="0회">0회</option>
+											<option value="1회">1회</option>
+											<option value="2회">2회</option>
+											<option value="3회">3회</option>
+											<option value="4회">4회</option>
+											<option value="5회 이상">5회 이상</option>
+										</optgroup>
+									</select>
+								</label>
+							</fieldset>
+						</p>
+					<fieldset>
+					<legend>로그인</legend>
+					<p>
+						<label for="user id">
+							아이디
+							<input type="text" id="user_id" name="user id" placeholder="User ID">
+						</label>
+					</p>
+					<p>
+						<label for="userpw">
+							비밀번호
+							<input type="password" id="userpw" name="password" placeholder="Password">
+						</label>
+					</p>
+					<p>
+						<label for="username">
+							이름
+							<input type="text" id="username" name="username" placeholder="Username">
+						</label>
+					</p>
+					<p>
+						<label for="desc">자기소개<!--user can have access to the size of the area-->
+							<input type="submit" >
+							<textarea id="desc" name="desc" placeholder="Self-Introduction">
+							</textarea>
+						</label>
+					</p>					
+			</form>	
+				<button type="submit">
+					<a href="url">
+						<a href = "https://www.google.com/" target="_blank" alt = "google button">
+						google 홈페이지로 이동하기
+					</a>
+
+				</button>
+				</fieldset>		
+			</div>
+
+			<h1> HTML 연습 노트</h1>
+			<h2><S>Bye My World</S></h2>
+			<font class="reason" size="3" color="black" face="고딕">아직 인사는 이르다<br>갑자기 관심이 생겨서 HTML 공부를 시작하게 되었슴니다</font><br>
+			<p id="randon_color_button">누르면 색이 바뀐다</p>
+			<p style="height: 80px"></p>
+		</header>	
+
+
+		<nav>
+			<fieldset>
+				<legend>
+					내 즐겨찾기 모음
+				</legend>
+				<p class="favoritesites" style="height: 40px;">
+					<a href="https://kcit.tistory.com/18" target="_blank" title="김씨 블로그(새창에서 열림)">김씨 블로그</a>     
+					<a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcenter-pf.kakao.com%2F_xhrxmsb%2Fdashboard%23" target="_blank" title="카카오톡 채널 관리자(새창에서 열림)">카카오톡 채널 관리자</a>
+					<a href="https://game.naver.com/esports/League_of_Legends/home" target="_blank" title="네이버 이스포츠(새창에서 열림)">네이버 이스포츠</a>
+				</p>	
+			</fieldset>			
+		</nav>
+
+		<div class="css_test_space">
+			<p class="testsentence"> css test sentence 1</p>
+			<p> css test sentence 2</p>
+			<p> css test sentence 3</p>
+			<p> css test sentence 4</p>
+		</div>
+
+
+
+		<div class="image"><!--div class는 css적용할 떄 식별자로 사용-->		
+			<p aling="left" class="picture_introduction"><strong>고양이 사진임미다</strong></p>
+				<a class="catimage" href="야옹이.jpg" target="_blank">
+				<img src="야옹이.jpg" width="200" height="250" alt="내가 찍은 고양이(새 창에서 열림)"></a><br>
+				<!--이미지 경로를 지정할 때 src 사용. when using image link, border attribute muste be added-->
+			<p aling="left"><strong>강아지 사진임미다</strong></p>
+			<a href="url">
+				<a href="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E" target="_blank">
+				<img src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E" width="280" height="200" alt="어디서 퍼온 강아지 사진(새 창에서 열림)" target="_blank"></a></a>
+			<p aling="left"><strong>내 증명사진임미다</strong></p>
+				<a href="../../OneDrive\바탕 화면\증명사진.jpg" target="_blank">
+				<img src="../../OneDrive\바탕 화면\증명사진.jpg" width="180" height="230" alt="나같이 생기지 않은 증명사진" alt="증명사진(새 창에서 열림)"></a><br>
+			<audio src="" controls></audio>
+			<p style="height: 50px">테스트용 오디오파일</p>		
+			<video src="" controls></video>
+			<p style="height: 80px;">테스트용 비디오파일</p>			
+		</div>	
+
+
+		<div class="diagram">
+			<p style="height: 15px" align="center"><em><strong>표를 만들어보자</strong></em></p>
+			<!--colspan, rawspan으로 확장 조절, cellpadding>셀 크기, cellsapacing>셀 사이 공간-->
+			<table class="report card" border="1" bgcolor="#FFFFCC" cellpadding="15" cellspacing="6"  align="center">
+				<caption>성적표</caption>
+				<tr>
+					<td>국어</td>
+					<td>수학</td>
+					<td rowspan="2">한국사</td>
+				</tr>
+				<tr>
+					<td>내신 등급</td>
+					<td>내신 등급</td>			
+				</tr>
+				<tr align="left">
+					<td colspan="3">전체등수</td>
+				</tr>
+			</table>			
+			<p style="height: 120px;">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>	
+				<table class="personalhistory" border="1" bgcolor="#FAFFFB" cellpadding="10" cellspacing="6" align="center">
+					<caption>
+						My personal History
+						<p></p>
+					</caption>
+					<tr>
+						<td>
+							<ol>
+								<section>
+									<p>이승훈(Seunghun Lee)</p>								
+									<li>
+									<p>The Life Of Seunghun Lee</p>
+										<ol>
+											<li>Elementary School</li>
+											<li>University</li>
+											<li>Graduate School</li>
+										</ol>
+									</li>
+									<li>
+									The Habit Of Seunghun Lee
+									</li>
+									<li>
+									<p>The Award Seunghun Lee had won</p>
+									</li>
+								</section>
+							</ol>
+						</td>
+
+					</tr>
+				</table> 
+		</div>	
+
+
+		<div class="last page">
+			<dl>
+				<dt>HTML</dt>
+				<dd>HTML은 Hyper Text Markup Language 의 약자로 웹 문서의 구조를 설계하기 위한 목적으로 개발된 언어입니다.</dd>
+				<p></p>
+				<dt>CSS</dt>
+				<dd>CSS는 Cascading Style Sheets의 약자로 웹 문서를 꾸미기 위한 목적으로 개발된 언어입니다.</dd>
+			</dl>
+			<br>			
+		<p align="center"><a name="bottom">여기서 문서의 하단   
+			<a href="#top">맨 위로 이동</a></a></p>
+		</div>		
+		
+		
+	</body>
+</html>
